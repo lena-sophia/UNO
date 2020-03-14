@@ -1,0 +1,5 @@
+Koordinaten
+
+buttons dynamisch
+farbe wünschen
+wenn keine möglich ist, eine ziehe, prüfen ob möglich

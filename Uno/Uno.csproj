@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBDD75D0-F351-4FC0-9FD8-68D435F2228F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Uno</RootNamespace>
+    <AssemblyName>Uno</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Karten\blau_0.png" />
+    <Content Include="Karten\blau_1.1.png" />
+    <Content Include="Karten\blau_1.2.png" />
+    <Content Include="Karten\blau_2.1.png" />
+    <Content Include="Karten\blau_2.2.png" />
+    <Content Include="Karten\blau_3.1.png" />
+    <Content Include="Karten\blau_3.2.png" />
+    <Content Include="Karten\blau_4.1.png" />
+    <Content Include="Karten\blau_4.2.png" />
+    <Content Include="Karten\blau_5.1.png" />
+    <Content Include="Karten\blau_5.2.png" />
+    <Content Include="Karten\blau_6.1.png" />
+    <Content Include="Karten\blau_6.2.png" />
+    <Content Include="Karten\blau_7.1.png" />
+    <Content Include="Karten\blau_7.2.png" />
+    <Content Include="Karten\blau_8.1.png" />
+    <Content Include="Karten\blau_8.2.png" />
+    <Content Include="Karten\blau_9.1.png" />
+    <Content Include="Karten\blau_9.2.png" />
+    <Content Include="Karten\blau_Aussetzen1.png" />
+    <Content Include="Karten\blau_Aussetzen2.png" />
+    <Content Include="Karten\blau_Richtungswechsel1.png" />
+    <Content Include="Karten\blau_Richtungswechsel2.png" />
+    <Content Include="Karten\blau_ZweiZiehen1.png" />
+    <Content Include="Karten\blau_ZweiZiehen2.png" />
+    <Content Include="Karten\gelb_0.png" />
+    <Content Include="Karten\gelb_1.1.png" />
+    <Content Include="Karten\gelb_1.2.png" />
+    <Content Include="Karten\gelb_2.1.png" />
+    <Content Include="Karten\gelb_2.2.png" />
+    <Content Include="Karten\gelb_3.1.png" />
+    <Content Include="Karten\gelb_3.2.png" />
+    <Content Include="Karten\gelb_4.1.png" />
+    <Content Include="Karten\gelb_4.2.png" />
+    <Content Include="Karten\gelb_5.1.png" />
+    <Content Include="Karten\gelb_5.2.png" />
+    <Content Include="Karten\gelb_6.1.png" />
+    <Content Include="Karten\gelb_6.2.png" />
+    <Content Include="Karten\gelb_7.1.png" />
+    <Content Include="Karten\gelb_7.2.png" />
+    <Content Include="Karten\gelb_8.1.png" />
+    <Content Include="Karten\gelb_8.2.png" />
+    <Content Include="Karten\gelb_9.1.png" />
+    <Content Include="Karten\gelb_9.2.png" />
+    <Content Include="Karten\gelb_Aussetzen1.png" />
+    <Content Include="Karten\gelb_Aussetzen2.png" />
+    <Content Include="Karten\gelb_Richtungswechsel1.png" />
+    <Content Include="Karten\gelb_Richtungswechsel2.png" />
+    <Content Include="Karten\gelb_ZweiZiehen1.png" />
+    <Content Include="Karten\gelb_ZweiZiehen2.png" />
+    <Content Include="Karten\gruen_0.png" />
+    <Content Include="Karten\gruen_1.1.png" />
+    <Content Include="Karten\gruen_1.2.png" />
+    <Content Include="Karten\gruen_2.1.png" />
+    <Content Include="Karten\gruen_2.2.png" />
+    <Content Include="Karten\gruen_3.1.png" />
+    <Content Include="Karten\gruen_3.2.png" />
+    <Content Include="Karten\gruen_4.1.png" />
+    <Content Include="Karten\gruen_4.2.png" />
+    <Content Include="Karten\gruen_5.1.png" />
+    <Content Include="Karten\gruen_5.2.png" />
+    <Content Include="Karten\gruen_6.1.png" />
+    <Content Include="Karten\gruen_6.2.png" />
+    <Content Include="Karten\gruen_7.1.png" />
+    <Content Include="Karten\gruen_7.2.png" />
+    <Content Include="Karten\gruen_8.1.png" />
+    <Content Include="Karten\gruen_8.2.png" />
+    <Content Include="Karten\gruen_9.1.png" />
+    <Content Include="Karten\gruen_9.2.png" />
+    <Content Include="Karten\gruen_Aussetzen1.png" />
+    <Content Include="Karten\gruen_Aussetzen2.png" />
+    <Content Include="Karten\gruen_Richtungswechsel1.png" />
+    <Content Include="Karten\gruen_Richtungswechsel2.png" />
+    <Content Include="Karten\gruen_ZweiZiehen1.png" />
+    <Content Include="Karten\gruen_ZweiZiehen2.png" />
+    <Content Include="Karten\rot_0.png" />
+    <Content Include="Karten\rot_1.1.png" />
+    <Content Include="Karten\rot_1.2.png" />
+    <Content Include="Karten\rot_2.1.png" />
+    <Content Include="Karten\rot_2.2.png" />
+    <Content Include="Karten\rot_3.1.png" />
+    <Content Include="Karten\rot_3.2.png" />
+    <Content Include="Karten\rot_4.1.png" />
+    <Content Include="Karten\rot_4.2.png" />
+    <Content Include="Karten\rot_5.1.png" />
+    <Content Include="Karten\rot_5.2.png" />
+    <Content Include="Karten\rot_6.1.png" />
+    <Content Include="Karten\rot_6.2.png" />
+    <Content Include="Karten\rot_7.1.png" />
+    <Content Include="Karten\rot_7.2.png" />
+    <Content Include="Karten\rot_8.1.png" />
+    <Content Include="Karten\rot_8.2.png" />
+    <Content Include="Karten\rot_9.1.png" />
+    <Content Include="Karten\rot_9.2.png" />
+    <Content Include="Karten\rot_Aussetzen1.png" />
+    <Content Include="Karten\rot_Aussetzen2.png" />
+    <Content Include="Karten\rot_Richtungswechsel1.png" />
+    <Content Include="Karten\rot_Richtungswechsel2.png" />
+    <Content Include="Karten\rot_ZweiZiehen1.png" />
+    <Content Include="Karten\rot_ZweiZiehen2.png" />
+    <Content Include="Karten\Wuenschen-1.png" />
+    <Content Include="Karten\Wuenschen-2.png" />
+    <Content Include="Karten\Wuenschen-3.png" />
+    <Content Include="Karten\Wuenschen-4.png" />
+    <Content Include="Karten\Wuenschen4-1.png" />
+    <Content Include="Karten\Wuenschen4-2.png" />
+    <Content Include="Karten\Wuenschen4-3.png" />
+    <Content Include="Karten\Wuenschen4-4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
