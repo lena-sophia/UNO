@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Uno
 {
     public class Stack
-    {
+    { 
         //Das ist der Bilder Pfad
         private static String imgPath = "C:\\Users\\Sophia\\Desktop\\Karten\\";
         //Kartenstapel
